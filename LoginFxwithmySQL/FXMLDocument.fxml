@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication21.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="logform" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="71.0" layoutY="129.0" prefHeight="42.0" prefWidth="64.0" text="Email" />
+            <Label layoutX="71.0" layoutY="182.0" prefHeight="42.0" prefWidth="64.0" text="Password" />
+            <Button fx:id="u_login" layoutX="429.0" layoutY="333.0" mnemonicParsing="false" onAction="#loginAccount" prefHeight="29.0" prefWidth="113.0" text="Login" />
+            <Label layoutX="180.0" layoutY="44.0" prefHeight="42.0" prefWidth="179.0" text="Log in Form">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="u_email" layoutX="203.0" layoutY="138.0" prefHeight="36.0" prefWidth="246.0" promptText="email" />
+            <TextField fx:id="u_password" layoutX="203.0" layoutY="185.0" prefHeight="36.0" prefWidth="246.0" promptText="Password" />
+            <Button fx:id="u_createNew" layoutX="110.0" layoutY="333.0" mnemonicParsing="false" onAction="#goSignUp_page" prefHeight="30.0" prefWidth="172.0" text="Create New Account" />
+            <Button fx:id="rony_b" layoutX="517.0" layoutY="44.0" mnemonicParsing="false" onAction="#goRony" text="Rony" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="su_form" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Label layoutX="71.0" layoutY="129.0" prefHeight="42.0" prefWidth="64.0" text="Email" />
+            <Label layoutX="71.0" layoutY="182.0" prefHeight="42.0" prefWidth="64.0" text="Password" />
+            <Button fx:id="su_login" layoutX="429.0" layoutY="333.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="113.0" text="Login" />
+            <Label layoutX="180.0" layoutY="44.0" prefHeight="50.0" prefWidth="270.0" text="New in Form">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="su_email" layoutX="203.0" layoutY="138.0" prefHeight="36.0" prefWidth="246.0" promptText="email" />
+            <TextField fx:id="su_password" layoutX="203.0" layoutY="185.0" prefHeight="36.0" prefWidth="246.0" promptText="Password" />
+            <Button fx:id="su_already" layoutX="110.0" layoutY="333.0" mnemonicParsing="false" onAction="#goLogin_page" prefHeight="30.0" prefWidth="172.0" text="Already I have an Account" />
+            <Label layoutX="78.0" layoutY="233.0" prefHeight="42.0" prefWidth="64.0" text="Program" />
+            <TextField fx:id="su_program" layoutX="204.0" layoutY="236.0" prefHeight="36.0" prefWidth="246.0" promptText="Program" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="welcome_page" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Label layoutX="239.0" layoutY="304.0" prefHeight="50.0" prefWidth="208.0" text="Welcome">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="211.0" fitWidth="270.0" layoutX="220.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Rony7s@.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
