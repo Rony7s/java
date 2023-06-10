@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="learntable.Table01Controller">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="myTitle" layoutX="241.0" layoutY="45.0" text="This A Table">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="myTable" layoutX="67.0" layoutY="165.0" prefHeight="200.0" prefWidth="498.0">
+                    <columns>
+                      <TableColumn fx:id="muName" prefWidth="125.5999755859375" text="Name" />
+                      <TableColumn fx:id="myAge" prefWidth="102.39996337890625" text="Age" />
+                        <TableColumn fx:id="myProgram" prefWidth="215.199951171875" text="Program" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
